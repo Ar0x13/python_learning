@@ -7,7 +7,7 @@ parser = Parser()
 
 try:
 # Math expression initialization
-
+	result = 'none'
 	expression = input('Enter math expression: \n')
 	print('Your expression is: \n', expression)
 
@@ -23,8 +23,6 @@ try:
 	for i in range(number):
 		print("Enter variable value for {}: ".format(variables[i]) )
 		value = int(input())
-        while not value.isdigit():
-	    	value = input('Please, enter integer value: \n')
 		var_values.append(value)
 
 # Concatenation variables and their values
@@ -36,7 +34,7 @@ try:
 #	result = parser.evaluate(expression, dictionary)
 
 # 2nd case -> you can use python eval (don`t forget about AST module!!!)
-    result = eval(expression, dictionary)
+	result = eval(expression, dictionary)
 
 except Exception as error:
 	print(error)

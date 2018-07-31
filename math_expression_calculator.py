@@ -30,7 +30,11 @@ try:
 	print('Your variables and values: ', dictionary)
 
 # Expression execution
-	result = parser.evaluate(expression, dictionary)
+# 1st case
+#	result = parser.evaluate(expression, dictionary)
+
+# 2nd case -> you can use python eval (don`t forget about AST module!!!)
+    result = eval(expression, dictionary)
 
 except Exception as error:
 	print(error)

@@ -18,11 +18,13 @@ try:
 	variables = list(parser.parse(expression).variables())
 	print('You have such variables; ', variables)
 
-# Add values to variables
+# Add values to variables and check that all input -> are digits
 	var_values = []
 	for i in range(number):
 		print("Enter variable value for {}: ".format(variables[i]) )
 		value = int(input())
+        while not value.isdigit():
+	    	value = input('Please, enter integer value: \n')
 		var_values.append(value)
 
 # Concatenation variables and their values

@@ -4,11 +4,11 @@ This script will delete all your tweets in the specified account.
 """
 ############################################################################
 # Script Name    : tweets-destroyer                     
-# Description    : Script that will delete all your tweets. (My account was hacked so I have a lot of spam tweets :)
+# Description    : Script that will delete all your tweets. (My account was hacked so I had a lot of spam tweets :)
 # Author:        : Andrey Ruban  
-# Orignal idea   : Dave Jeffery
+# Original idea  : Dave Jeffery
 # Email          :  
-# Requirements   : Python 3, tweepy 
+# Requirements   : Python 3, tweepy module
 ############################################################################
 
 import tweepy

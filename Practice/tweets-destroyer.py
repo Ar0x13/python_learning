@@ -13,10 +13,10 @@ This script will delete all your tweets in the specified account.
 
 import tweepy
 
-CONSUMER_KEY = 'XXX1'
-CONSUMER_SECRET = 'XXX2'
-ACCESS_TOKEN_KEY= 'XXX3'
-ACCESS_TOKEN_SECRET='XXX4'
+consumer_key = 'XXX1'
+consumer_secret = 'XXX2'
+access_token= 'XXX3'
+access_token_secret='XXX4'
 
 def oauth_login(consumer_key, consumer_secret):
      # Authenticate with twitter using OAuth    

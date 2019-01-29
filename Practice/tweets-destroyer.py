@@ -37,7 +37,10 @@ def delete_tweets(api):
             except:
                 print("Failed to delete:", status.id)
 
-if __name__ == "__main__":
+def main():
     api = oauth_login(consumer_key, consumer_secret)
     print("Authenticated in Twitter as: {}".format(api.me().screen_name))
     delete_tweets(api)
+
+if __name__ == "__main__":
+    main()
